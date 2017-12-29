@@ -1,5 +1,5 @@
-var moment = require('moment');
-var express = require('express');
+const moment = require('moment');
+const express = require('express');
 var app = express();
 
 var rightMeow =  moment().format();
@@ -7,6 +7,10 @@ var rightMeow =  moment().format();
 // Make sure moment is working!!
 console.log("The current time: " + rightMeow + "\nWe're getting ready for take off!");
 
+/*
+
+
+ */
 var parkingObject = {
     RFID:22123,
     status: "Occupied",
