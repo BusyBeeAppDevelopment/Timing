@@ -1,24 +1,3 @@
-/**
- * @param secondHand - this will receive a second value from MomentJS
- * @returns {number} - an integer value of random but Unique RFID tag
- */
-
-function spotPicker(secondHand){
-    const magicEightBall = Math.floor((Math.random() * secondHand) + 1);
-    var fractionOfEight = magicEightBall/10;
-
-    console.log(magicEightBall);
-    console.log(fractionOfEight);
-    return magicEightBall;
-}
-
-/**
- * @returns {number}
- */
-function randomStatus(){
-    var status = Math.floor(Math.random() * 5);
-    return status;
-}
 
 /**
  * @function parkingStatus - is used to return a string value for a parking spot object
@@ -55,7 +34,3 @@ function parkingStatus(val){
     }
     return status;
 }
-
-spotPicker(54);
-console.log(randomStatus());
-console.log(parkingStatus(0));
