@@ -17,7 +17,7 @@ function parkingStatus(val){
             break;
         case 2:
             // Parking is occupied, but not validate
-            status = 'entering';
+            status = 'occupied';
             break;
         case 3:
             // Parking is occupied but not authorized
@@ -33,4 +33,11 @@ function parkingStatus(val){
             break;
     }
     return status;
+}
+
+/**
+ * @function - Should take values in a Moment.js format
+ */
+function timeStamp() {
+
 }
